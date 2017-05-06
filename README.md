@@ -21,6 +21,11 @@ git clone https://github.com/steven-senko/fun_service.git<br/>
 mv fun_service/* .<br/>
 rm -rf fun_service<br/>
 pip install -r requirements.txt<br/>
+
+Edit variables REGION_NAME and BUCKET in the app.py accordingly to your S3 settings<br/>
+
+Run last line:<br/>
+
 chalice deploy<br/>
 
 After executing the previous line you will get a link like this:<br/>
