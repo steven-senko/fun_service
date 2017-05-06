@@ -13,20 +13,20 @@ https://www.digitalocean.com/community/tutorials/common-python-tools-using-virtu
 
 Run these commands to start the service on AWS:<br/>
 ```
-virtualenv fun_service_venv && cd fun_service_venv<br/>
-source bin/activate<br/>
-pip install chalice<br/>
-chalice new-project fun_service && cd fun_service<br/>
-git clone https://github.com/steven-senko/fun_service.git<br/>
-mv fun_service/* .<br/>
-rm -rf fun_service<br/>
-pip install -r requirements.txt<br/>
+virtualenv fun_service_venv && cd fun_service_venv
+source bin/activate
+pip install chalice
+chalice new-project fun_service && cd fun_service
+git clone https://github.com/steven-senko/fun_service.git
+mv fun_service/* .
+rm -rf fun_service
+pip install -r requirements.txt
 ```
 Edit variables REGION_NAME and BUCKET in the app.py accordingly to your S3 settings<br/>
 
 Run last line:<br/>
 ```
-chalice deploy<br/>
+chalice deploy
 ```
 After executing the previous line you will get a link like this:<br/>
 https://lrrtzc6ov0.execute-api.us-east-1.amazonaws.com/dev/<br/>
