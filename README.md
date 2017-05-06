@@ -26,8 +26,8 @@ Edit variables REGION_NAME and BUCKET in the app.py accordingly to your S3 setti
 
 Run last line:<br/>
 ```
-chalice deploy
-```<br/>
+chalice deploy<br/>
+```
 After executing the previous line you will get a link like this:<br/>
 https://lrrtzc6ov0.execute-api.us-east-1.amazonaws.com/dev/<br/>
 
