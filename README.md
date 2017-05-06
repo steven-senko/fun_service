@@ -48,3 +48,7 @@ returns a file with a given name from the S3 storage</li>
 <li><b>PUT /png/{file_name}</b><br/>
 uploads file to the S3 storage and gives it name from parameter</li>
 </ul>
+
+# TODO:
+
+The service does not work as expected with .png files and needs a fix
