@@ -5,10 +5,13 @@ import boto3
 from botocore.exceptions import ClientError
 from chalice import Chalice, Response
 
-app = Chalice(app_name='fun_service')
-S3 = boto3.client('s3', region_name='us-east-1')
-
+REGION_NAME = 'us-east-1'
 BUCKET = 'fun-service'
+
+app = Chalice(app_name='fun_service')
+S3 = boto3.client('s3', region_name=REGION_NAME)
+
+
 
 
 def check_parenthesis(text):
