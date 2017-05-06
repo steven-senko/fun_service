@@ -1,5 +1,14 @@
 # fun_service
 
+Before you start:<br/>
+
+<ol>
+<li>Sign up for AWS</li>
+<li>Create S3 storage</li>
+<li>Install aws on your local machine</li>
+<li>Install virtualenv on your local machine</li>
+</ol>
+
 virtualenv fun_service_venv && cd fun_service_venv<br/>
 source bin/activate<br/>
 pip install chalice<br/>
