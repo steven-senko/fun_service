@@ -11,6 +11,8 @@ http://docs.aws.amazon.com/cli/latest/userguide/installing.html</li>
 https://www.digitalocean.com/community/tutorials/common-python-tools-using-virtualenv-installing-with-pip-and-managing-packages</li>
 </ol>
 
+Run these commands to start the service on AWS:<br/>
+
 virtualenv fun_service_venv && cd fun_service_venv<br/>
 source bin/activate<br/>
 pip install chalice<br/>
@@ -21,3 +23,9 @@ rm -rf fun_service<br/>
 pip install -r requirements.txt<br/>
 chalice deploy<br/>
 
+After executing the previous line you will get a link like this:<br/>
+https://lrrtzc6ov0.execute-api.us-east-1.amazonaws.com/dev/<br/>
+
+This is the end-point for the newly created web service<br/>
+
+# fun_service API<br/>
