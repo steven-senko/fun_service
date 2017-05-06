@@ -1,13 +1,15 @@
 import requests
 from lxml import html
 import boto3
-from botocore.exceptions import ClientError
 
+from botocore.exceptions import ClientError
 from chalice import Chalice, Response
 
 app = Chalice(app_name='fun_service')
 S3 = boto3.client('s3', region_name='us-east-1')
+
 BUCKET = 'fun-service'
+
 
 def check_parenthesis(text):
     """
@@ -127,8 +129,7 @@ def png(key):
         try:
             body = S3.get_object(Bucket=BUCKET, Key=key + '.png')
             return Response(body=body['Body'].read(),
-                    status_code=200,
-                    headers={'Content-Type': 'image/png'})
+                            status_code=200,
+                            headers={'Content-Type': 'image/png'})
         except ClientError:
             raise Chalice.NotFoundError(key)
-
