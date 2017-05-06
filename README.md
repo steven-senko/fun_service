@@ -1,6 +1,6 @@
 # fun_service
 
-virtualenv fun_service_venv && cd fun_service_venv
+virtualenv fun_service_venv && cd fun_service_venv<br/>
 source bin/activate
 pip install chalice
 chalice new-project fun_service && cd fun_service
