@@ -41,9 +41,9 @@ returns {'status': 'ok'}</li>
 <li><b>GET /wiki/{article_name}</b><br/>
 takes article's name as a parameter and looks up it on Wikipedia,<br/>
 finds first link in the article's body and follows it.<br/>
-returns a JSON object with a list of article's names from the Wikipedia which lead to the Philosophy page or<br/>
+returns a JSON object with a list of article's names from the Wikipedia which lead to the Philosophy page<br/>
 e.g. {"path": ["programmer", "Computer software", "Computer system", "Computer programming", "Computing", "Mathematics", "Quantity", "Property (philosophy)", "Philosophy"]}<br/>
-an empty list if given article leads to an empty page or creates an infinite loop</li>
+or an empty list if given article leads to an empty page or creates an infinite loop</li>
 <li><b>GET /png/{file_name}</b><br/>
 returns a file with a given name from the S3 storage</li>
 <li><b>PUT /png/{file_name}</b><br/>
