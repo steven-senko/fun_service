@@ -32,14 +32,14 @@ This is the end-point for the newly created web service<br/>
 
 <ul>
 <li>GET /<br/>
-</li>
+returns {'status': 'ok'}</li>
 <li>GET /wiki/{article_name}<br/>
 takes article's name as a parameter and looks up it on Wikipedia,<br/>
 finds first link in the article's body and follows it.<br/>
-returns a list of article's names from the Wikipedia which lead to Philosophy page or<br/>
-an ampty list if give article lead to empty page or creates an infinite loop</li>
+returns a list of article's names from the Wikipedia which lead to the Philosophy page or<br/>
+an empty list if given article leads to an empty page or creates an infinite loop</li>
 <li>GET /png/{file_name}<br/>
-returns a file with a given name</li>
+returns a file with a given name from the S3 storage</li>
 <li>PUT /png/{file_name}<br/>
 uploads file to the S3 storage and gives it name from parameter</li>
 </ul>
